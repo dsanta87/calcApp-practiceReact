@@ -13,8 +13,8 @@ const MathOperations = ({onClickOperation, onClickEqual}) => (
 )
 
 MathOperations.prototypes = {
-  onClickOperation: PropTypes.func.isRequired, 
-  onClickEqual: PropTypes.func.isRequired 
+  onClickOperation: PropTypes.func.isRequired,
+  onClickEqual: PropTypes.func.isRequired
 }
 
 export default MathOperations
