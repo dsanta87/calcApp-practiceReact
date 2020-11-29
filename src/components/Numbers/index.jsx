@@ -5,7 +5,15 @@ import Button from '../Button'
 const btnNumbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 const renderButtons = onClickNumber => {
-  return btnNumbers.map(number => {return <Button text={number} clickHandler={onClickNumber}/>})
+  return btnNumbers.map(number => {
+    return(
+      <Button
+        key={number}
+        text={number}
+        clickHandler={onClickNumber}
+      />
+    )
+  })
 }
 
 const Numbers = ({onClickNumber}) => (
